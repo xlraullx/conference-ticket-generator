@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference ticket generator</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/images/logo-mark.svg" alt="logo"> <h2>Coding Conf</h2>
+    </header>
+
+    <main class="main">
+        <div class="presentation-text">
+            <h1>
+                Your Journey to Coding Conf 
+                2025 Starts Here!
+            </h1>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+        <form class="form" action="">
+            <div class="upload-avatar">
+                <p>Upload Avatar</p>
+                <div class="upload-area">
+                    <label for="avatar">Drag and drop or click to upload</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/png">
+                </div>
+                <img src="./assets/images/icon-info.svg" alt="icon-info"> <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+            </div>
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="textField">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="textField" placeholder="example@email.com">
+
+            <label for="">GitHub Username</label>
+            <input type="text" id="githubUserName" name="textField" placeholder="@yourusername"> 
+
+            <button type="submit">Generate My Ticket</button>
+        </form>
+        
+    </main>
+
+</body>
+</html>

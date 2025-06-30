@@ -1,0 +1,36 @@
+:root{
+            /* Colors */
+
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(252, 6%, 83%);
+    --pale-violet: hsl(245, 15%, 58%);
+    --light-violet: hsl(245, 19.10%, 34.90%);
+    --light--transparent-violet: hsl(245, 19.10%, 34.90%, 0.3);
+    --dark-violet: hsl(248, 70%, 10%);
+    --orange: hsl(7, 88%, 67%);
+    --strong-orange: hsl(7, 71%, 60%);
+
+
+        /* Project color definitions */
+
+    --header-letter-color: var(--white);
+    --presentation-h1-color: var(--white);
+    --upload-p-color: var(--gray);
+    --presentation-p-color: var(--gray);
+    --upload-avatar-text-color: var(--white);
+    --upload-button-color: var(--light-violet);
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(../../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf) format('truetype'),
+    url(../../assets/fonts/static/Inconsolata-Regular.ttf) format('truetype'),
+    url(../../assets/fonts/static/Inconsolata-Medium.ttf) format('truetype'),
+    url(../../assets/fonts/static/Inconsolata-Bold.ttf) format('truetype'),
+    url(../../assets/fonts/static/Inconsolata-ExtraBold.ttf) format('truetype');
+}
+
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
