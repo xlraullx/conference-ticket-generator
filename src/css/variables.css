@@ -15,10 +15,11 @@
 
     --header-letter-color: var(--white);
     --presentation-h1-color: var(--white);
-    --upload-p-color: var(--gray);
     --presentation-p-color: var(--gray);
+    --inputs-background-color: var(--light--transparent-violet);
+    --inputs-focus-color: var(--gray);
     --upload-avatar-text-color: var(--white);
-    --upload-button-color: var(--light-violet);
+    --upload-p-and-lable-color: var(--gray);
 }
 
 @font-face {
