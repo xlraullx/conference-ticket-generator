@@ -17,9 +17,15 @@
     --presentation-h1-color: var(--white);
     --presentation-p-color: var(--gray);
     --inputs-background-color: var(--light--transparent-violet);
-    --inputs-focus-color: var(--gray);
+    --inputs-focus-color: var(--pale-violet);
+    --inputs-border-color: var(--pale-violet);
+    --inputs-label-color: var(--white);
+    --inputs-placeholder-color: var(--gray);
+    --inputs-text-color: var(--white);
     --upload-avatar-text-color: var(--white);
     --upload-p-and-lable-color: var(--gray);
+    --bnt-submit-bkg-color: var(--orange);
+    --bnt-text-color: var(--dark-violet);
 }
 
 @font-face {
@@ -30,7 +36,6 @@
     url(../../assets/fonts/static/Inconsolata-Bold.ttf) format('truetype'),
     url(../../assets/fonts/static/Inconsolata-ExtraBold.ttf) format('truetype');
 }
-
 
 html{
     font-size: 62.5%; /* 1rem = 10px */

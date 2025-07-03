@@ -31,7 +31,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     height: 95vh;
 }
 
@@ -52,10 +51,41 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    max-width: 460px;
     width: 100%;
     height: 100%;
+}
+
+.form input {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.6rem;
+    color: var(--inputs-text-color);
+    background-color: var(--inputs-background-color);
+    width: inherit;
+    height: 52px;
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--inputs-border-color);
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.form input:focus-visible {
+    outline: 2px solid var(--inputs-focus-color);
+    outline-offset: 3px;
+}
+
+.form label:not([for="avatar"]) {
+    width: fit-content;
+    font-size: 1.8rem;
+    color: var(--inputs-label-color);
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.form input::placeholder {
+    color: var(--inputs-placeholder-color);
 }
 
 .form .upload-avatar {
@@ -66,7 +96,7 @@ body {
 .form .upload-area {
     margin-top: 10px;
     position: relative;
-    width: 460px;
+    width: inherit;
     height: 130px;
     background: var(--inputs-background-color);
     backdrop-filter: blur(2px);
@@ -74,22 +104,21 @@ body {
 }
 
 .form .upload-area input {
-    display: block;
     position: absolute;
-    background-image: url(../../assets/images/icon-upload.svg);
     opacity: 0;
     width: 100%;
     height: 100%;
     cursor: pointer;
 }
 
-.form .upload-area label, .form .upload-info {
+.form .upload-area label,
+.form .upload-info {
     color: var(--upload-p-and-lable-color);
 }
 
 .form .upload-area label {
     border: 10px solid #0000;
-    border-image: url(../../assets/images/border-upload-image.svg) 50 stretch;    
+    border-image: url(../../assets/images/border-upload-image.svg) 50 stretch;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +130,7 @@ body {
     cursor: pointer;
 }
 
-.form .upload-area:has(input:focus-visible){
+.form .upload-area:has(input:focus-visible) {
     outline: 2px solid var(--inputs-focus-color);
     outline-offset: 3px;
 }
@@ -112,6 +141,7 @@ body {
     background-image: url(../../assets/images/icon-upload.svg);
     background-size: 30px;
     backdrop-filter: blur(10px);
+    z-index: -1;
     border-radius: inherit;
     border: 1px solid var(--inputs-background-color);
     background-repeat: no-repeat;
@@ -120,12 +150,25 @@ body {
     height: 50px;
 }
 
-.form .upload-info{
+.form .upload-info {
     display: flex;
     font-size: 1.4rem;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
 }
 
 .form .upload-info img {
     margin-right: 10px;
+}
+
+.form .bnt {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.2rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 16px;
+    color: var(--bnt-text-color);
+    background-color: var(--bnt-submit-bkg-color);
+    height: 54px;
+    margin-top: 8px;
+    cursor: pointer;
 }
