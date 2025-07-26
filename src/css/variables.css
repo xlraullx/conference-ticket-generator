@@ -26,6 +26,8 @@
     --upload-p-and-lable-color: var(--gray);
     --bnt-submit-bkg-color: var(--orange);
     --bnt-text-color: var(--dark-violet);
+
+    --error-text-color: var(--strong-orange);
 }
 
 @font-face {

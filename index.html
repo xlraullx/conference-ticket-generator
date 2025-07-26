@@ -16,17 +16,15 @@
 
     <main class="main">
         <div class="presentation-text">
-            <h1>
-                Your Journey to Coding Conf 
-                2025 Starts Here!
-            </h1>
+            <h1>Your Journey to Coding Conf 
+                2025 Starts Here!</h1>
             <p>Secure your spot at next year's biggest coding conference.</p>
         </div>
-        <form class="form" action="">
+        <form class="form" id="ticketForm" >
             <div class="upload-avatar">
                 <p>Upload Avatar</p>
                 <div class="upload-area">
-                    <input type="file" id="avatar" name="avatar" accept="image/png, image/png">
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
                     <label for="avatar">Drag and drop or click to upload</label>
                 </div>
                 <div class="upload-info">
@@ -35,18 +33,22 @@
             </div>
 
             <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="textField">
+            <input autocomplete="name" type="text" id="fullName" name="name">
+            <div class="error-text name"><img src="./assets/images/icon-info.svg" alt="icon-info"> <p>please enter a valid name</p></div>
 
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="textField" placeholder="example@email.com">
+            <input autocomplete="email" type="text" id="email" name="email" placeholder="example@email.com">
+            <div class="error-text email"><img src="./assets/images/icon-info.svg" alt="icon-info"> <p>please enter a valid email Address</p></div>
 
             <label for="githubUserName">GitHub Username</label>
-            <input type="text" id="githubUserName" name="textField" placeholder="@yourusername"> 
+            <input type="text" id="githubUserName" name="githubUserName" placeholder="@yourusername"> 
+            <div class="error-text githubUserName"><img src="./assets/images/icon-info.svg" alt="icon-info"> <p>please enter a valid github username</p></div>
 
             <button class="bnt" type="submit">Generate My Ticket</button>
         </form>
         
     </main>
 
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
